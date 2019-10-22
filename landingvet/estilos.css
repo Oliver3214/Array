@@ -1,0 +1,341 @@
+:root{
+    --color1:rgb(219,144,.5);
+    --color2:rgba(0, 3, 2, 0.079);
+    --color3:rgba(11,194,211,0.623);
+    --fondo: #f2f2f2;
+    --titulos:33px;
+    --margenes:60px;
+    --espacios:10px;
+    --espacios-contenido:45px;
+  }
+  *{
+      margin: 0px;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  Body{
+      font-family: 'Open Sans', sans-serif;
+      background: var(--fondo);
+      box-sizing: border-box;
+  
+  }
+  img{
+    vertical-align: top;
+  }
+  .hidden{
+    overflow: hidden;
+  }
+ 
+  .centrado{
+    position: fixed;
+    /* width: 100vw;
+    height: 100vh;
+    background: black;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+  }
+  .lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 6px;
+    width: 13px;
+    background: #fff;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 6px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 26px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 45px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 6px;
+      height: 51px;
+    }
+    50%, 100% {
+      top: 19px;
+      height: 26px;
+    }
+  }
+  header{
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(to bottom, 
+    gray,
+    rgba(29,241,171, .6),
+    rgba(7,109,150, .45)
+    ),url(fondo2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 6px 0 black;
+  }
+  nav{
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 0 10px 0 #000;
+  }
+  .nav1{
+    background: transparent;
+    height: 80px;
+    color: #f2f2f2;
+  }
+  .nav2 {
+    background: black;
+    height: 100px;
+    color: black;
+    
+  }
+  .nav2 li{
+    color: white;
+    
+  }
+  .contenedor-nav{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    height: inherit;
+    overflow: hidden;
+  }
+  nav .enlaces a{
+    display: inline-block;
+    padding: 5px 0;
+    margin-right: 17px ;
+    font-size: 17px;
+    font-weight: 300;
+    text-decoration: none;
+    border-bottom: 9px solid transparent;
+    color: inherit;
+  }
+  nav .enlaces a:hover{
+    border-radius: 1px;
+    background: #20a3b4;
+    transition: 0,6s;
+}
+
+  .icono{
+    display: none;
+    font-size: 24px;
+    padding: 23.5px 20px;
+  }
+  
+.textos{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+  text-align: center;
+}
+.textos h1{
+font-size: 80px 
+}
+  .fab{
+    font-size: 70px;
+    color: white;
+    margin-bottom: var(---espacios);
+    display: inline-block;
+  }
+  .textos h1{
+  font-size: 80px 
+  }
+     h2{
+   color: white;
+   border-bottom:1px solid black;
+   font-size: 30px;
+   text-align: center;
+
+    }
+    #enlaces a{
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        font-weight: 300;
+        font-size: 17px;
+    }
+    #enlaces a:hover{
+        background: rgb(34, 162, 172);
+    }
+
+    span{
+      color: white;
+      font-size: 15px;
+      display: block;
+      margin: auto;
+      margin-top: var(--espacios);
+      height: 2px;
+      margin-bottom: var(--espacios-contenido);
+    }
+    strong{
+      color: transparent;
+      font-size: 15px;
+      display: block;
+      margin: auto;
+      margin-top: var(--espacios);
+      width: 100px;
+      height: 2px;
+      background: var(--color1);
+      margin-bottom: var(--espacios-contenido);
+    }
+  .contenedor{
+    margin:auto;
+    padding-top: 20px;
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: none;
+  }
+  .conten-form1{
+    width: 49%;
+    box-shadow: 0 0 6px 0 black;
+    height: 700px;
+    overflow: hidden;
+
+  }
+  .text-mayor{
+      padding: 20px;
+    }
+  p{
+   padding: 30px;
+    width: 100%;
+    box-shadow: 0 0 6px 0 black;
+    height: 100px;
+    overflow: hidden;
+  }
+  footer{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+  .form1{
+      padding: 50px;
+      height: 2000px;
+    background-image: url(fondocont2.jpg);
+    text-align: center;
+  }
+  .form2{
+    padding: 3px 3px;
+    text-align: center;
+    overflow: scroll;
+    width: 100%;
+    height: 632px;
+
+  }
+.form-group{
+    padding: 19px;
+    text-align: left;
+    font-weight: 300;
+}
+input{
+    padding: 8px 80px;
+    text-align: center;
+}
+select{
+    padding: 10px 130px;
+    color: gray;
+}
+.text{
+    color: white;
+}
+.enviar{
+    background: black;
+    border: 1px solid black;
+    color: white;
+}
+.enviar:hover{
+    background: white;
+    border: 1px solid white;
+    color: black;
+}
+.chek:hover{
+    color: black;
+    cursor: pointer;
+    background: black;
+}
+/*.cont-items {
+overflow: hidden;
+padding: 10px;
+}
+.cont-items .activo{
+  background: rgb(8, 8, 10);
+  color: white;
+}
+.cont-items li{
+    display: inline-block;
+    text-align: center;
+    margin-left: var(---espacios);
+    margin-bottom: var(---espacios-contenido);
+    padding: 10px 12px;
+    border: 1px solid rgb(8, 8, 10);
+    list-style: none;
+    color: var(---color);
+}
+.cont-items li:hover{
+  background: rgb(8, 8, 10);
+  color: white;
+}
+.imagen1{
+  justify-content: space-around;
+  width: 100%;
+  box-shadow: 0 0 6px 0 rgb(24, 18, 7);
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}*/
+.titulo1{
+  position: inherit;
+  padding: 400px 100px;
+  background-image: url(foto.jpg);
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+  .cont-items img{
+  width: 100%;
+  height: 700px;
+}
+.hola1{
+  background: black;
+}
+.parrafos{
+  text-align: center;
+  color: gray;
+  display: block;
+  padding: 10px;
+}
+.parrafos a{
+  text-align: center;
+  color: gray;
+  display: block;
+  padding: 10px;
+}
+
+
+
+
+  
+
